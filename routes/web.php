@@ -14,6 +14,20 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('praktikum1', function () {
+    return view('prak1web');
+});
+
+Route::get('tugas4', function () {
+    return view('tgs4');
+});
+Route::get('tugas', 'ViewController@showTugas');
+
+Route::get('praktikum2', 'ViewController@showPraktikum2');
+
+Route::get('ets', 'ViewController@showEts');
+
 //route CRUD
 Route::get('/pegawai','PegawaiController@index');
 
